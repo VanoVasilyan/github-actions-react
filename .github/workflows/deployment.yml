@@ -39,7 +39,7 @@ jobs:
     needs: [lint, test]
     strategy:
       matrix:
-        node-version: [14, 16]
+        node-version: [14.x, 16.x]
         os: [windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
