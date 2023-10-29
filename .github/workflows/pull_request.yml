@@ -8,4 +8,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Print Context
-        run: echo "${{ github }}"
+        run: echo $JSON
+        env:
+          JSON: ${{ toJSON(github) }}
