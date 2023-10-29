@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header: React.FC = () => {
     return (
-        <div>Header</div>
+        <div>This is Header component</div>
     )
 }
 
